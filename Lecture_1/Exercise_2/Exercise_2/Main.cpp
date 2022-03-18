@@ -44,7 +44,7 @@ int main()
 int** allocate_matrix(int l, int c)
 {
     int** m;
-    m = new int* [l];
+    m = new int*[l];
     for (int i = 0; i < l; i++)
     {
         m[i] = new int[c];
@@ -73,7 +73,7 @@ void read_matrix(int** m, int l, int c, char name)
     for (int i = 0; i < l; i++)
         for (int j = i; j < c; j++)
         {
-            std::cout << 'M' << "[" << i << "][" << j << "] = ";
+            std::cout << name << "[" << i << "][" << j << "] = ";
             std::cin >> m[i][j];
         }
 }
